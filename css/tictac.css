@@ -1,0 +1,79 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    border:1px solid red;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.query{
+    padding:10px;
+}
+.btn1, .btn2{
+    padding:5px;
+    margin:10px;
+}
+.tictac{
+    width:600px;
+    height:600px;
+    border-right:8px;
+    border-left:8px;
+    display:grid;
+    grid-template-areas: 
+               "area1 area2 area3"
+               "area4 area5 area6"
+               "area7 area8 area9";
+    justify-content: center;
+    align-items: center;
+
+}
+.styler{
+    width:200px;
+    height:200px;
+    border:3px solid green;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.area1{
+    grid-area: area1;
+}
+.area2{
+    grid-area: area2;
+}
+.area3{
+    grid-area: area3;
+}
+.area4{
+    grid-area: area4;
+}
+.area5{
+    grid-area: area5;
+}
+.area6{
+    grid-area: area6;
+}
+.area7{
+    grid-area: area7;
+}
+.area8{
+    grid-area: area8;
+}
+.area9{
+    grid-area: area9;
+}
