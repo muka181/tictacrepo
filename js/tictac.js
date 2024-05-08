@@ -14,41 +14,289 @@ let area9 = document.querySelector(".area9");
 let xclicked = false
 let oclicked = false
 
+let currentplayer = ""
+
 x.onclick = function(e){
+    currentplayer = "X"
     xclicked = true
+    oclicked = false
 }
 o.onclick = function(e){
+    currentplayer = "O"
+    xclicked = false
     oclicked = true
 }
 
-// function checkinsertandmakemove(area){
-//     if(xclicked == true && ((area1.textContent == "O" || undefined) || (area2.textContent == "O" || undefined)
-//     || (area3.textContent == "O"|| undefined) || (area4.textContent == "O" || undefined ) || (area5.textContent == "O" || undefined)
-//     || (area6.textContent == "O" || undefined) || (area7.textContent == "O" || undefined) || (area8.textContent == "O" || undefined)
-//     || (area9.textContent == "O" || undefined))){
-//         area.textContent = "X"
-//         console.log(area)
-//     }else if(oclicked == true && ((area1.textContent == "X" || undefined) || (area2.textcontent == "X" || undefined)
-//     || (area3.textContent == "X"|| undefined) || (area4.textContent == "X" || undefined ) || (area5.textContent == "X" || undefined)
-//     || (area6.textContent == "X" || undefined) || (area7.textContent == "X" || undefined) || (area8.textContent == "X" || undefined)
-//     || (area9.textContent == "X" || undefined))){
-//         area.textContent = "O"
-//     }
-     
+
+function compplayer(){
+
+    // let areas = document.querySelectorAll(".area")
+
+    let random_no = Math.floor(Math.random() * 2) + 1
+
+
+    if(area1.textContent === "" && currentplayer == "X"){
+
+        if(random_no === 1)
+        {
+            area1.textContent = "O"
+        }
+        if(random_no === 2)
+        {
+            area1.textContent = "O"
+        }
+
+        random_no = ""
+        
+    }
+    else if(area1.textContent === "" && currentplayer == "O"){
+
+        if(random_no === 1)
+        {
+            area1.textContent = "X"
+        }
+        if(random_no === 2)
+        {
+            area1.textContent = "X"
+        }
+        random_no = ""
+        
+    }
+    if(area2.textContent === "" && currentplayer == "X"){
+
+        if(random_no === 1)
+        {
+            area2.textContent = "O"
+        }
+        if(random_no === 2)
+        {
+            area2.textContent = "O"
+        }
+
+        random_no = ""
+        
+    }
+    else if(area2.textContent === "" && currentplayer == "O"){
+
+        if(random_no === 1)
+        {
+            area2.textContent = "X"
+        }
+        if(random_no === 2)
+        {
+            area2.textContent = "X"
+        }
+        random_no = ""
+        
+    }
+    if(area3.textContent === "" && currentplayer == "X"){
+
+        if(random_no === 1)
+        {
+            area3.textContent = "O"
+        }
+        if(random_no === 2)
+        {
+            area3.textContent = "O"
+        }
+
+        random_no = ""
+        
+    }
+    else if(area3.textContent === "" && currentplayer == "O"){
+
+        if(random_no === 1)
+        {
+            area3.textContent = "X"
+        }
+        if(random_no === 2)
+        {
+            area3.textContent = "X"
+        }
+        random_no = ""
+        
+    }
+    if(area4.textContent === "" && currentplayer == "X"){
+
+        if(random_no === 1)
+        {
+            area4.textContent = "O"
+        }
+        if(random_no === 2)
+        {
+            area4.textContent = "O"
+        }
+
+        random_no = ""
+        
+    }
+    else if(area4.textContent === "" && currentplayer == "O"){
+
+        if(random_no === 1)
+        {
+            area4.textContent = "X"
+        }
+        if(random_no === 2)
+        {
+            area4.textContent = "X"
+        }
+        random_no = ""
+        
+    }
+    if(area5.textContent === "" && currentplayer == "X"){
+
+        if(random_no === 1)
+        {
+            area5.textContent = "O"
+        }
+        if(random_no === 2)
+        {
+            area5.textContent = "O"
+        }
+
+        random_no = ""
+        
+    }
+    else if(area5.textContent === "" && currentplayer == "O"){
+
+        if(random_no === 1)
+        {
+            area5.textContent = "X"
+        }
+        if(random_no === 2)
+        {
+            area5.textContent = "X"
+        }
+        random_no = ""
+        
+    }
+    if(area6.textContent === "" && currentplayer == "X"){
+
+        if(random_no === 1)
+        {
+            area6.textContent = "O"
+        }
+        if(random_no === 2)
+        {
+            area6.textContent = "O"
+        }
+
+        random_no = ""
+        
+    }
+    else if(area6.textContent === "" && currentplayer == "O"){
+
+        if(random_no === 1)
+        {
+            area6.textContent = "X"
+        }
+        if(random_no === 2)
+        {
+            area6.textContent = "X"
+        }
+        random_no = ""
+        
+    }
+    if(area7.textContent === "" && currentplayer == "X"){
+
+        if(random_no === 1)
+        {
+            area7.textContent = "O"
+        }
+        if(random_no === 2)
+        {
+            area7.textContent = "O"
+        }
+
+        random_no = ""
+        
+    }
+    else if(area7.textContent === "" && currentplayer == "O"){
+
+        if(random_no === 1)
+        {
+            area7.textContent = "X"
+        }
+        if(random_no === 2)
+        {
+            area7.textContent = "X"
+        }
+        random_no = ""
+        
+    }
+    if(area8.textContent === "" && currentplayer == "X"){
+
+        if(random_no === 1)
+        {
+            area8.textContent = "O"
+        }
+        if(random_no === 2)
+        {
+            area8.textContent = "O"
+        }
+
+        random_no = ""
+        
+    }
+    else if(area8.textContent === "" && currentplayer == "O"){
+
+        if(random_no === 1)
+        {
+            area8.textContent = "X"
+        }
+        if(random_no === 2)
+        {
+            area8.textContent = "X"
+        }
+        random_no = ""
+        
+    }
+    if(area9.textContent === "" && currentplayer == "X"){
+
+        if(random_no === 1)
+        {
+            area9.textContent = "O"
+        }
+        if(random_no === 2)
+        {
+            area9.textContent = "O"
+        }
+
+        random_no = ""
+        
+    }
+    else if(area9.textContent === "" && currentplayer == "O"){
+
+        if(random_no === 1)
+        {
+            area9.textContent = "X"
+        }
+        if(random_no === 2)
+        {
+            area9.textContent = "X"
+        }
+        random_no = ""
+        
+    }
+
     
-// }
+}
+
 
 function checkinsertandmakemove(area) {
    
-    if (xclicked && (area.textContent === "O" || area.textContent === "")) {
-        area.textContent = "X";
-        xclicked = false
-    } 
-   
-    if (oclicked && (area.textContent === "X" || area.textContent === "")) {
-        area.textContent = "O";
-        oclicked = false
-    }
+   if(currentplayer === "X" && area.textContent === ""){
+    area.textContent = "X"
+    compplayer()
+    currentplayer = "X"
+    
+   }
+   if(currentplayer === "O" && area.textContent === ""){
+    area.textContent = "O"
+    compplayer()
+    currentplayer = "O"
+    
+   }
 }
 
 area1.onclick = function(e){
