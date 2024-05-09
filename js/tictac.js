@@ -75,7 +75,7 @@ function compplayer(){
 
         random_no = ""
         
-    }
+    }               
     else if(area2.textContent === "" && currentplayer == "O"){
 
         if(random_no === 1)
